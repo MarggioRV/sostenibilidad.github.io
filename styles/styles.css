@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative; /* Necesario para el pseudo-elemento */}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/MA.png'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.2; /* Ajuste de opacidad */
+    z-index: -1; /* Asegura que esté detrás de otros contenidos */
+}
+
+header, footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f0f0f0;
+}
+
+main {
+    text-align: center;
+    padding: 2rem;
+    transition: margin-left 0.3s; /* Transición suave */
+}
+
+canvas {
+    background: transparent; /* Asegúrate de que el canvas no tenga fondo */
+}
+
+.description-box {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.info-panel {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    background-color: #f8f8f8;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+aside {
+    width: 231px;
+    height: 100%;
+    position: fixed;
+    left: -231px; /* Oculto inicialmente */
+    top: 0;
+    background-color: #f4f4f4;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s; /* Transición suave */
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+aside ul li a:hover {
+    background-color: #ddd;
+}
+
+.toggle-button {
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    background-color: #f4f4f4;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s; /* Transición suave */
+}
+

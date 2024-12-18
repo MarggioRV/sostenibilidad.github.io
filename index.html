@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title> 
+    <link rel="stylesheet" href="styles/Inicio.css"> <!-- Enlace al CSS específico -->
+</head>
+
+<body>
+    <!-- Header grande -->
+    <header>
+        <h1>Proyecto de Consumo</h1>
+        <p class="bienvenidos">Bienvenidos</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="mapa_insta.html">Nosotros</a></li>
+            <li><a href="#Alumnos">Alumnos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal agrupado en un section -->
+    <section class="main-container">
+        
+        <aside id="sidebar2"> <!-- Aside lateral -->
+        <button class="toggle-button2" onclick="toggleAside()">➡️</button>
+            <ul>
+                <li><a href="#noticias">A</a></li><br><br>
+                <li><a href="#eventos">E</a></li><br><br>
+                <li><a href="#blog">B</a></li><br><br>
+                <li><a href="#soporte">S</a></li><br><br>
+            </ul>      
+        </aside>
+
+        <main>
+            <!-- Contenido destacado -->
+            <section id="destacado"> 
+                <h2>Contenido Destacado</h2>
+                <p class="texto-blanco">Aquí va una breve descripción del contenido destacado de la página.</p>
+            </section>
+
+            <!-- Articles -->
+            <article id="article1">
+                <h2>Calculos</h2>
+                <img src="images/1.png" alt="Calculos" class="imagen-articulo">
+            </article>
+            
+            <article id="Mapas">
+                <h2>Mapas</h2>
+                <img src="images/prueb1.png" alt="Mapas" class="imagen-articulo2">
+            </article>
+            
+            <article id="Mejoras_II">
+                <h2>Mejoras e Ideas a Implementar</h2>
+                <img src="images/persp.png" alt="Mejoras_II" class="imagen-articulo3">
+            </article>
+        
+        </main>
+    
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p class="bienvenidos">&copy; 2024 ??? Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="/scripts/inicio.js"></script> <!-- Enlace al archivo JavaScript externo -->
+
+</body>
+
+</html>

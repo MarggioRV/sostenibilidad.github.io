@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#name {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: fit-content;
+    opacity: 0;
+    border-radius: 5px;
+    border: 3px solid rgb(245, 128, 128);
+    padding: 0px 5px;
+    font-size: 1.5rem;
+
+}
+
+
+#timeCont{
+    background-color: white;
+    width: fit-content;
+    font-size: 1.5rem;
+    padding: 5px 5px;
+    border-radius: 5px;
+    border: 3px solid rgb(245, 128, 128);        
+}
+
+
+svg path {
+    cursor: pointer;
+}
+
+svg path:hover{fill:peru}
+
+#allSvg { 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; }
+        
+#allSvg { 
+    max-width: 100%; /* Ajusta el tamaño según sea necesario */ 
+    height: auto; }
+
+
+/* Configuracion Normal */
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        position: relative; /* Necesario para el pseudo-elemento */}
+    
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../images/MA.png'); /* Ruta de la imagen de fondo */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        opacity: 0.2; /* Ajuste de opacidad */
+        z-index: -1; /* Asegura que esté detrás de otros contenidos */
+    }
+    
+    header, footer {
+        text-align: center;
+        padding: 1rem;
+        background-color: #f0f0f0;
+    }
+    
+    main {
+        text-align: center;
+        padding: 2rem;
+        transition: margin-left 0.3s; /* Transición suave */
+    }
+    
+    
+    .description-box {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+    
+    .info-panel {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        background-color: #21d849;
+        padding: 0.5rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    
+   

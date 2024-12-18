@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Mapa de Arboles</title>
+    
+    <!-- Vinculamos el archivo CSS externo -->
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  
+  <body>
+    
+    <header>
+      <h1>Mapa de Instalaciones</h1> <!-- Título principal centrado -->
+    </header>
+   
+    <!-- Botón para desplegar y ocultar el menú lateral -->
+    <button class="toggle-button" onclick="toggleAside()">➡️</button>
+    
+    <!-- Menú lateral desplegable -->
+    <aside id="sidebar">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+     
+      </ul>
+    </aside>
+    
+    <!-- Contenido principal -->
+    <main id="main-content">
+      <section id="mapa">
+        
+        <article>
+          <figure>
+            <!-- Canvas donde se dibuja el mapa -->
+            <canvas id="myCanvas" width="800" height="600"></canvas>
+            <figcaption id="description-box" class="description-box">
+              Pasa el ratón sobre una área para ver la descripción.
+            </figcaption>
+          </figure>
+          <!-- Panel de información adicional -->
+          <section id="info-panel" class="info-panel">
+            Hola, pasa el ratón sobre el area especificá.
+          </section>
+        </article>
+      
+    </section>
+    </main>
+    
+    <footer>
+      <p>&copy; 2024 Mapa Interactivo Canvas. Cura Overa.</p>
+    </footer>
+    
+    <!-- Enlace al archivo JavaScript -->
+    <script src="scripts/script.js"></script>
+    <!-- Enlace al nuevo archivo JavaScript para el mapa -->
+    <script src="scripts/toggleSidebar.js"></script>
+  </body>
+
+</html>

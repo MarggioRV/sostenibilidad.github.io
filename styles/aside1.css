@@ -1,0 +1,43 @@
+aside {
+    width: 231px;
+    height: 100%;
+    position: fixed;
+    left: -231px; /* Oculto inicialmente */
+    top: 0;
+    background-color: #f4f4f4;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s; /* Transición suave */
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+aside ul li a:hover {
+    background-color: #ddd;
+}
+
+.toggle-button {
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    background-color: #f4f4f4;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s; /* Transición suave */
+}
